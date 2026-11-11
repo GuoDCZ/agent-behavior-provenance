@@ -1,0 +1,5 @@
+$ python artifact/scripts/prepare.py normal --output /workspace/work/project/artifact/runs/release-validation/normal-001
+Prepared /workspace/work/project/artifact/runs/release-validation/normal-001
+Agent working directory: /workspace/work/project/artifact/runs/release-validation/normal-001/workspace
+
+EXIT_CODE=0; EXPECTED=0

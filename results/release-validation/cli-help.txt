@@ -1,0 +1,9 @@
+usage: cli.py [-h] {analyze,compare,slice} ...
+
+Offline trajectory analysis; never substitutes fixture data for missing logs.
+
+positional arguments:
+  {analyze,compare,slice}
+
+options:
+  -h, --help            show this help message and exit

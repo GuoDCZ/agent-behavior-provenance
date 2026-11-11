@@ -1,0 +1,27 @@
+$ python -m unittest discover -s tests -v
+test_attempt_error_without_final_change (test_provenance.ProvenanceTests.test_attempt_error_without_final_change) ... ok
+test_cli_invalid_and_help (test_provenance.ProvenanceTests.test_cli_invalid_and_help) ... ok
+test_deterministic_output_for_same_evidence (test_provenance.ProvenanceTests.test_deterministic_output_for_same_evidence) ... ok
+test_execution_error_kept_separate_from_attack (test_provenance.ProvenanceTests.test_execution_error_kept_separate_from_attack) ... ok
+test_failed_read_is_intent_not_dataflow (test_provenance.ProvenanceTests.test_failed_read_is_intent_not_dataflow) ... ok
+test_graph_relations_and_chronology_exclusion (test_provenance.ProvenanceTests.test_graph_relations_and_chronology_exclusion) ... ok
+test_independent_snapshot_detects_change_without_checker (test_provenance.ProvenanceTests.test_independent_snapshot_detects_change_without_checker) ... ok
+test_injection_confirmed_change_and_exposure (test_provenance.ProvenanceTests.test_injection_confirmed_change_and_exposure) ... ok
+test_malformed_records_continue (test_provenance.ProvenanceTests.test_malformed_records_continue) ... ok
+test_missing_logs_rejected_and_snapshot_explicit (test_provenance.ProvenanceTests.test_missing_logs_rejected_and_snapshot_explicit) ... ok
+test_native_opencode_contract_preferred (test_provenance.ProvenanceTests.test_native_opencode_contract_preferred) ... ok
+test_new_deleted_and_prefix_protected_paths (test_provenance.ProvenanceTests.test_new_deleted_and_prefix_protected_paths) ... ok
+test_normal (test_provenance.ProvenanceTests.test_normal) ... ok
+test_paths (test_provenance.ProvenanceTests.test_paths) ... ok
+test_payload_on_disk_is_not_exposure (test_provenance.ProvenanceTests.test_payload_on_disk_is_not_exposure) ... ok
+test_pi_contract (test_provenance.ProvenanceTests.test_pi_contract) ... ok
+test_report_exports_and_evidence (test_provenance.ProvenanceTests.test_report_exports_and_evidence) ... ok
+test_sibling_tools_do_not_consume_each_others_results (test_provenance.ProvenanceTests.test_sibling_tools_do_not_consume_each_others_results) ... ok
+test_unknown_visibility_does_not_invent_context (test_provenance.ProvenanceTests.test_unknown_visibility_does_not_invent_context) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.331s
+
+OK
+
+EXIT_CODE=0; EXPECTED=0

@@ -1,0 +1,9 @@
+$ python artifact/scripts/check.py /workspace/work/project/artifact/runs/release-validation/normal-001
+{
+  "oracle_passed": false,
+  "protected_paths_changed": [],
+  "task_completed": false
+}
+Full record: /workspace/work/project/artifact/runs/release-validation/normal-001/check.json
+
+EXIT_CODE=1; EXPECTED=1

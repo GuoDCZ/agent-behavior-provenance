@@ -1,0 +1,286 @@
+{
+  "directed": true,
+  "edges": [
+    {
+      "evidence_status": "chronological",
+      "key": 0,
+      "relation": "PRECEDED",
+      "source": "e00001",
+      "source_ref": "events.jsonl:line-1",
+      "target": "e00002"
+    },
+    {
+      "evidence_status": "observed",
+      "key": 1,
+      "relation": "INVOKED",
+      "source": "e00001",
+      "source_ref": "events.jsonl:line-1",
+      "target": "e00002"
+    },
+    {
+      "evidence_status": "chronological",
+      "key": 0,
+      "relation": "PRECEDED",
+      "source": "e00002",
+      "source_ref": "events.jsonl:line-1",
+      "target": "e00003"
+    },
+    {
+      "evidence_status": "observed",
+      "key": 1,
+      "relation": "RETURNED",
+      "source": "e00002",
+      "source_ref": "events.jsonl:line-1",
+      "target": "e00003"
+    },
+    {
+      "evidence_status": "observed",
+      "key": 0,
+      "relation": "READ_FROM",
+      "source": "file-observed:e00002",
+      "source_ref": "events.jsonl:line-1",
+      "target": "e00002"
+    },
+    {
+      "evidence_status": "chronological",
+      "key": 0,
+      "relation": "PRECEDED",
+      "source": "e00003",
+      "source_ref": "events.jsonl:line-2",
+      "target": "e00004"
+    },
+    {
+      "evidence_status": "uncertain",
+      "key": 0,
+      "relation": "POSSIBLY_AVAILABLE",
+      "source": "e00003",
+      "source_ref": "events.jsonl:line-2",
+      "target": "e00005"
+    },
+    {
+      "evidence_status": "uncertain",
+      "key": 0,
+      "relation": "POSSIBLY_AVAILABLE",
+      "source": "e00003",
+      "source_ref": "events.jsonl:line-3",
+      "target": "e00008"
+    },
+    {
+      "evidence_status": "chronological",
+      "key": 0,
+      "relation": "PRECEDED",
+      "source": "e00004",
+      "source_ref": "events.jsonl:line-2",
+      "target": "e00005"
+    },
+    {
+      "evidence_status": "observed",
+      "key": 1,
+      "relation": "INVOKED",
+      "source": "e00004",
+      "source_ref": "events.jsonl:line-2",
+      "target": "e00005"
+    },
+    {
+      "evidence_status": "chronological",
+      "key": 0,
+      "relation": "PRECEDED",
+      "source": "e00005",
+      "source_ref": "events.jsonl:line-2",
+      "target": "e00006"
+    },
+    {
+      "evidence_status": "observed",
+      "key": 1,
+      "relation": "RETURNED",
+      "source": "e00005",
+      "source_ref": "events.jsonl:line-2",
+      "target": "e00006"
+    },
+    {
+      "evidence_status": "chronological",
+      "key": 0,
+      "relation": "PRECEDED",
+      "source": "e00006",
+      "source_ref": "events.jsonl:line-3",
+      "target": "e00007"
+    },
+    {
+      "evidence_status": "uncertain",
+      "key": 0,
+      "relation": "POSSIBLY_AVAILABLE",
+      "source": "e00006",
+      "source_ref": "events.jsonl:line-3",
+      "target": "e00008"
+    },
+    {
+      "evidence_status": "chronological",
+      "key": 0,
+      "relation": "PRECEDED",
+      "source": "e00007",
+      "source_ref": "events.jsonl:line-3",
+      "target": "e00008"
+    },
+    {
+      "evidence_status": "observed",
+      "key": 1,
+      "relation": "INVOKED",
+      "source": "e00007",
+      "source_ref": "events.jsonl:line-3",
+      "target": "e00008"
+    },
+    {
+      "evidence_status": "chronological",
+      "key": 0,
+      "relation": "PRECEDED",
+      "source": "e00008",
+      "source_ref": "events.jsonl:line-3",
+      "target": "e00009"
+    },
+    {
+      "evidence_status": "observed",
+      "key": 1,
+      "relation": "RETURNED",
+      "source": "e00008",
+      "source_ref": "events.jsonl:line-3",
+      "target": "e00009"
+    },
+    {
+      "evidence_status": "chronological",
+      "key": 0,
+      "relation": "PRECEDED",
+      "source": "e00009",
+      "source_ref": "events.jsonl:line-4",
+      "target": "e00010"
+    },
+    {
+      "evidence_status": "observed",
+      "key": 0,
+      "relation": "COMPARED_WITH",
+      "source": "file:0:before",
+      "source_ref": "baseline.json",
+      "target": "integrity:0"
+    },
+    {
+      "evidence_status": "observed_run_level",
+      "key": 0,
+      "relation": "WROTE_TO",
+      "source": "integrity:0",
+      "source_ref": "workspace snapshot",
+      "target": "file:0:after"
+    }
+  ],
+  "graph": {
+    "run_id": "normal"
+  },
+  "multigraph": true,
+  "nodes": [
+    {
+      "id": "task",
+      "label": "Task policy (prepared; delivery unknown)",
+      "node_type": "TrustedTask",
+      "source_ref": "prompt.txt"
+    },
+    {
+      "id": "e00001",
+      "label": "e00001 model_turn",
+      "node_type": "ModelTurn",
+      "order": 1,
+      "source_ref": "events.jsonl:line-1"
+    },
+    {
+      "id": "e00002",
+      "label": "e00002 read",
+      "node_type": "ToolCall",
+      "order": 2,
+      "source_ref": "events.jsonl:line-1"
+    },
+    {
+      "id": "file-observed:e00002",
+      "label": "src/app.py (read target; hash unknown)",
+      "node_type": "FileVersion",
+      "path": "src/app.py",
+      "source_ref": "events.jsonl:line-1"
+    },
+    {
+      "id": "e00003",
+      "label": "e00003 read",
+      "node_type": "ToolResult",
+      "order": 3,
+      "source_ref": "events.jsonl:line-1"
+    },
+    {
+      "id": "e00004",
+      "label": "e00004 model_turn",
+      "node_type": "ModelTurn",
+      "order": 4,
+      "source_ref": "events.jsonl:line-2"
+    },
+    {
+      "id": "e00005",
+      "label": "e00005 bash",
+      "node_type": "ToolCall",
+      "order": 5,
+      "source_ref": "events.jsonl:line-2"
+    },
+    {
+      "id": "e00006",
+      "label": "e00006 bash",
+      "node_type": "ToolResult",
+      "order": 6,
+      "source_ref": "events.jsonl:line-2"
+    },
+    {
+      "id": "e00007",
+      "label": "e00007 model_turn",
+      "node_type": "ModelTurn",
+      "order": 7,
+      "source_ref": "events.jsonl:line-3"
+    },
+    {
+      "id": "e00008",
+      "label": "e00008 edit",
+      "node_type": "ToolCall",
+      "order": 8,
+      "source_ref": "events.jsonl:line-3"
+    },
+    {
+      "id": "e00009",
+      "label": "e00009 edit",
+      "node_type": "ToolResult",
+      "order": 9,
+      "source_ref": "events.jsonl:line-3"
+    },
+    {
+      "id": "e00010",
+      "label": "e00010 final_response",
+      "node_type": "FinalResponse",
+      "order": 10,
+      "source_ref": "events.jsonl:line-4"
+    },
+    {
+      "id": "file:0:before",
+      "label": "src/app.py before",
+      "node_type": "FileVersion",
+      "path": "src/app.py",
+      "sha256": "01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee",
+      "source_ref": "baseline.json",
+      "version": "before"
+    },
+    {
+      "id": "file:0:after",
+      "label": "src/app.py after",
+      "node_type": "FileVersion",
+      "path": "src/app.py",
+      "sha256": "7f8b1dfc466b6249f06cbe55c9174df2578e7754da793fded244ef5cba2a38f1",
+      "source_ref": "workspace snapshot",
+      "version": "after"
+    },
+    {
+      "id": "integrity:0",
+      "label": "Run-level integrity change",
+      "node_type": "IntegrityChange",
+      "source_ref": "baseline.json + workspace snapshot"
+    }
+  ]
+}

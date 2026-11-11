@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d3" for="node" attr.name="label" attr.type="string" />
+  <key id="d2" for="node" attr.name="source_ref" attr.type="string" />
+  <key id="d1" for="node" attr.name="node_type" attr.type="string" />
+  <key id="d0" for="graph" attr.name="run_id" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="task">
+      <data key="d1">TrustedTask</data>
+      <data key="d2">prompt.txt</data>
+      <data key="d3">Task policy (prepared; delivery unknown)</data>
+    </node>
+    <data key="d0">tool-output-001</data>
+  </graph>
+</graphml>

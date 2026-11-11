@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1045" role="img" aria-labelledby="title desc">
+<title id="title">Agent evidence provenance graph</title>
+<desc id="desc">Nodes follow export order. Solid edges are observed evidence, dashed orange edges are uncertain hypotheses, dotted gray edges mean chronology only. No edge proves cognitive influence.</desc>
+<rect width="100%" height="100%" fill="white"/>
+<text x="20" y="25" font-size="18">Evidence DAG: observed (solid), possible (orange dashed), time only (gray dotted)</text>
+<text x="20" y="50" font-size="12">Types: task · model · tool call/result · file version · integrity change · policy finding. Labels include type and evidence ID.</text>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L7,3 z" fill="#555"/></marker></defs>
+<path d="M590,100 C630,100 630,620 590,620" fill="none" stroke="#38566b" marker-end="url(#arrow)"><title>task → e00007: TASK_TEXT_PRESENT (observed); events.jsonl:line-3</title></path>
+<text x="630" y="360.0" font-size="9" fill="#38566b">TASK_TEXT_PRESENT</text>
+<path d="M590,165 C654,165 654,230 590,230" fill="none" stroke="#aaa" stroke-dasharray="3 5" marker-end="url(#arrow)"><title>e00001 → e00002: PRECEDED (chronological); events.jsonl:line-1</title></path>
+<text x="654" y="197.5" font-size="9" fill="#aaa">PRECEDED</text>
+<path d="M590,165 C678,165 678,230 590,230" fill="none" stroke="#38566b" marker-end="url(#arrow)"><title>e00001 → e00002: INVOKED (observed); events.jsonl:line-1</title></path>
+<text x="678" y="197.5" font-size="9" fill="#38566b">INVOKED</text>
+<path d="M590,230 C702,230 702,360 590,360" fill="none" stroke="#aaa" stroke-dasharray="3 5" marker-end="url(#arrow)"><title>e00002 → e00003: PRECEDED (chronological); events.jsonl:line-1</title></path>
+<text x="702" y="295.0" font-size="9" fill="#aaa">PRECEDED</text>
+<path d="M590,230 C726,230 726,360 590,360" fill="none" stroke="#38566b" marker-end="url(#arrow)"><title>e00002 → e00003: RETURNED (observed); events.jsonl:line-1</title></path>
+<text x="726" y="295.0" font-size="9" fill="#38566b">RETURNED</text>
+<path d="M590,295 C750,295 750,230 590,230" fill="none" stroke="#38566b" marker-end="url(#arrow)"><title>file-observed:e00002 → e00002: READ_FROM (observed); events.jsonl:line-1</title></path>
+<text x="750" y="262.5" font-size="9" fill="#38566b">READ_FROM</text>
+<path d="M590,360 C774,360 774,425 590,425" fill="none" stroke="#aaa" stroke-dasharray="3 5" marker-end="url(#arrow)"><title>e00003 → e00004: PRECEDED (chronological); events.jsonl:line-2</title></path>
+<text x="774" y="392.5" font-size="9" fill="#aaa">PRECEDED</text>
+<path d="M590,360 C798,360 798,490 590,490" fill="none" stroke="#c67800" stroke-dasharray="8 4" marker-end="url(#arrow)"><title>e00003 → e00005: POSSIBLY_AVAILABLE (uncertain); events.jsonl:line-2</title></path>
+<text x="798" y="425.0" font-size="9" fill="#c67800">POSSIBLY_AVAILABLE</text>
+<path d="M590,360 C822,360 822,750 590,750" fill="none" stroke="#c67800" stroke-dasharray="8 4" marker-end="url(#arrow)"><title>e00003 → e00009: POSSIBLY_AVAILABLE (uncertain); events.jsonl:line-4</title></path>
+<text x="822" y="555.0" font-size="9" fill="#c67800">POSSIBLY_AVAILABLE</text>
+<path d="M590,425 C846,425 846,490 590,490" fill="none" stroke="#aaa" stroke-dasharray="3 5" marker-end="url(#arrow)"><title>e00004 → e00005: PRECEDED (chronological); events.jsonl:line-2</title></path>
+<text x="846" y="457.5" font-size="9" fill="#aaa">PRECEDED</text>
+<path d="M590,425 C870,425 870,490 590,490" fill="none" stroke="#38566b" marker-end="url(#arrow)"><title>e00004 → e00005: INVOKED (observed); events.jsonl:line-2</title></path>
+<text x="870" y="457.5" font-size="9" fill="#38566b">INVOKED</text>
+<path d="M590,490 C894,490 894,555 590,555" fill="none" stroke="#aaa" stroke-dasharray="3 5" marker-end="url(#arrow)"><title>e00005 → e00006: PRECEDED (chronological); events.jsonl:line-2</title></path>
+<text x="894" y="522.5" font-size="9" fill="#aaa">PRECEDED</text>
+<path d="M590,490 C918,490 918,555 590,555" fill="none" stroke="#38566b" marker-end="url(#arrow)"><title>e00005 → e00006: RETURNED (observed); events.jsonl:line-2</title></path>
+<text x="918" y="522.5" font-size="9" fill="#38566b">RETURNED</text>
+<path d="M590,555 C942,555 942,620 590,620" fill="none" stroke="#aaa" stroke-dasharray="3 5" marker-end="url(#arrow)"><title>e00006 → e00007: PRECEDED (chronological); events.jsonl:line-3</title></path>
+<text x="942" y="587.5" font-size="9" fill="#aaa">PRECEDED</text>
+<path d="M590,555 C966,555 966,620 590,620" fill="none" stroke="#38566b" marker-end="url(#arrow)"><title>e00006 → e00007: AVAILABLE_TO_MODEL (observed); events.jsonl:line-3</title></path>
+<text x="966" y="587.5" font-size="9" fill="#38566b">AVAILABLE_TO_MODEL</text>
+<path d="M590,555 C990,555 990,750 590,750" fill="none" stroke="#c67800" stroke-dasharray="8 4" marker-end="url(#arrow)"><title>e00006 → e00009: POSSIBLY_AVAILABLE (uncertain); events.jsonl:line-4</title></path>
+<text x="990" y="652.5" font-size="9" fill="#c67800">POSSIBLY_AVAILABLE</text>
+<path d="M590,620 C630,620 630,685 590,685" fill="none" stroke="#aaa" stroke-dasharray="3 5" marker-end="url(#arrow)"><title>e00007 → e00008: PRECEDED (chronological); events.jsonl:line-4</title></path>
+<text x="630" y="652.5" font-size="9" fill="#aaa">PRECEDED</text>
+<path d="M590,685 C654,685 654,750 590,750" fill="none" stroke="#aaa" stroke-dasharray="3 5" marker-end="url(#arrow)"><title>e00008 → e00009: PRECEDED (chronological); events.jsonl:line-4</title></path>
+<text x="654" y="717.5" font-size="9" fill="#aaa">PRECEDED</text>
+<path d="M590,685 C678,685 678,750 590,750" fill="none" stroke="#38566b" marker-end="url(#arrow)"><title>e00008 → e00009: INVOKED (observed); events.jsonl:line-4</title></path>
+<text x="678" y="717.5" font-size="9" fill="#38566b">INVOKED</text>
+<path d="M590,750 C702,750 702,815 590,815" fill="none" stroke="#aaa" stroke-dasharray="3 5" marker-end="url(#arrow)"><title>e00009 → e00010: PRECEDED (chronological); events.jsonl:line-4</title></path>
+<text x="702" y="782.5" font-size="9" fill="#aaa">PRECEDED</text>
+<path d="M590,750 C726,750 726,815 590,815" fill="none" stroke="#38566b" marker-end="url(#arrow)"><title>e00009 → e00010: RETURNED (observed); events.jsonl:line-4</title></path>
+<text x="726" y="782.5" font-size="9" fill="#38566b">RETURNED</text>
+<path d="M590,815 C750,815 750,880 590,880" fill="none" stroke="#aaa" stroke-dasharray="3 5" marker-end="url(#arrow)"><title>e00010 → e00011: PRECEDED (chronological); events.jsonl:line-5</title></path>
+<text x="750" y="847.5" font-size="9" fill="#aaa">PRECEDED</text>
+<rect x="20" y="80" width="570" height="44" rx="5" fill="#fff4bd" stroke="#777"/>
+<text x="30" y="98" font-size="11">task [TrustedTask] Task policy (prepared; delivery unknown)<title>task [TrustedTask] Task policy (prepared; delivery unknown)</title></text>
+<text x="30" y="114" font-size="10">prompt.txt</text>
+<rect x="20" y="145" width="570" height="44" rx="5" fill="#eeeeee" stroke="#777"/>
+<text x="30" y="163" font-size="11">e00001 [ModelTurn] e00001 model_turn<title>e00001 [ModelTurn] e00001 model_turn</title></text>
+<text x="30" y="179" font-size="10">events.jsonl:line-1</text>
+<rect x="20" y="210" width="570" height="44" rx="5" fill="#d8ecff" stroke="#777"/>
+<text x="30" y="228" font-size="11">e00002 [ToolCall] e00002 read<title>e00002 [ToolCall] e00002 read</title></text>
+<text x="30" y="244" font-size="10">events.jsonl:line-1</text>
+<rect x="20" y="275" width="570" height="44" rx="5" fill="#ddf4df" stroke="#777"/>
+<text x="30" y="293" font-size="11">file-observed:e00002 [FileVersion] src/app.py (read target; hash unknown)<title>file-observed:e00002 [FileVersion] src/app.py (read target; hash unknown)</title></text>
+<text x="30" y="309" font-size="10">events.jsonl:line-1</text>
+<rect x="20" y="340" width="570" height="44" rx="5" fill="#e9ddff" stroke="#777"/>
+<text x="30" y="358" font-size="11">e00003 [ToolResult] e00003 read<title>e00003 [ToolResult] e00003 read</title></text>
+<text x="30" y="374" font-size="10">events.jsonl:line-1</text>
+<rect x="20" y="405" width="570" height="44" rx="5" fill="#eeeeee" stroke="#777"/>
+<text x="30" y="423" font-size="11">e00004 [ModelTurn] e00004 model_turn<title>e00004 [ModelTurn] e00004 model_turn</title></text>
+<text x="30" y="439" font-size="10">events.jsonl:line-2</text>
+<rect x="20" y="470" width="570" height="44" rx="5" fill="#d8ecff" stroke="#777"/>
+<text x="30" y="488" font-size="11">e00005 [ToolCall] e00005 bash<title>e00005 [ToolCall] e00005 bash</title></text>
+<text x="30" y="504" font-size="10">events.jsonl:line-2</text>
+<rect x="20" y="535" width="570" height="44" rx="5" fill="#e9ddff" stroke="#777"/>
+<text x="30" y="553" font-size="11">e00006 [ToolResult] e00006 bash<title>e00006 [ToolResult] e00006 bash</title></text>
+<text x="30" y="569" font-size="10">events.jsonl:line-2</text>
+<rect x="20" y="600" width="570" height="44" rx="5" fill="#eeeeee" stroke="#777"/>
+<text x="30" y="618" font-size="11">e00007 [ModelRequest] e00007 model_request<title>e00007 [ModelRequest] e00007 model_request</title></text>
+<text x="30" y="634" font-size="10">events.jsonl:line-3</text>
+<rect x="20" y="665" width="570" height="44" rx="5" fill="#eeeeee" stroke="#777"/>
+<text x="30" y="683" font-size="11">e00008 [ModelTurn] e00008 model_turn<title>e00008 [ModelTurn] e00008 model_turn</title></text>
+<text x="30" y="699" font-size="10">events.jsonl:line-4</text>
+<rect x="20" y="730" width="570" height="44" rx="5" fill="#d8ecff" stroke="#777"/>
+<text x="30" y="748" font-size="11">e00009 [ToolCall] e00009 edit<title>e00009 [ToolCall] e00009 edit</title></text>
+<text x="30" y="764" font-size="10">events.jsonl:line-4</text>
+<rect x="20" y="795" width="570" height="44" rx="5" fill="#e9ddff" stroke="#777"/>
+<text x="30" y="813" font-size="11">e00010 [ToolResult] e00010 edit<title>e00010 [ToolResult] e00010 edit</title></text>
+<text x="30" y="829" font-size="10">events.jsonl:line-4</text>
+<rect x="20" y="860" width="570" height="44" rx="5" fill="#eee" stroke="#777"/>
+<text x="30" y="878" font-size="11">e00011 [FinalResponse] e00011 final_response<title>e00011 [FinalResponse] e00011 final_response</title></text>
+<text x="30" y="894" font-size="10">events.jsonl:line-5</text>
+</svg>

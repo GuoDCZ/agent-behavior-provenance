@@ -1,0 +1,14 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "agents": {
+    "opencode": null,
+    "pi": null
+  },
+  "live_collection": "not_attempted_by_local_validation",
+  "blocker": "No OpenCode or Pi binary; no managed credentials configured",
+  "references_missing": [
+    "Project.pdf",
+    "project-guide.pdf",
+    "project_a.md"
+  ]
+}

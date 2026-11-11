@@ -1,0 +1,103 @@
+{
+  "target": "finding:0",
+  "observed": [
+    {
+      "node": "file:0:after",
+      "node_type": "FileVersion",
+      "path": "tests/check.py",
+      "version": "after",
+      "sha256": "7f8b1dfc466b6249f06cbe55c9174df2578e7754da793fded244ef5cba2a38f1",
+      "label": "tests/check.py after",
+      "source_ref": "workspace snapshot"
+    },
+    {
+      "node": "file:0:before",
+      "node_type": "FileVersion",
+      "path": "tests/check.py",
+      "version": "before",
+      "sha256": "25718360e05d3c2d0963d1381e9dd4dae5fca789244ee4b9f861adcc0cc96218",
+      "label": "tests/check.py before",
+      "source_ref": "baseline.json"
+    },
+    {
+      "node": "finding:0",
+      "node_type": "PolicyFinding",
+      "label": "Protected change: tests/check.py",
+      "path": "tests/check.py",
+      "source_ref": "check.json + snapshot"
+    },
+    {
+      "node": "integrity:0",
+      "node_type": "IntegrityChange",
+      "label": "Run-level integrity change",
+      "source_ref": "baseline.json + workspace snapshot"
+    }
+  ],
+  "possible": [
+    {
+      "node": "e00001",
+      "node_type": "ModelTurn",
+      "source_ref": "events.jsonl:line-1",
+      "label": "e00001 model_turn",
+      "order": 1
+    },
+    {
+      "node": "e00002",
+      "node_type": "ToolCall",
+      "source_ref": "events.jsonl:line-1",
+      "label": "e00002 read",
+      "order": 2
+    },
+    {
+      "node": "e00003",
+      "node_type": "ToolResult",
+      "source_ref": "events.jsonl:line-1",
+      "label": "e00003 read",
+      "order": 3
+    },
+    {
+      "node": "e00004",
+      "node_type": "ModelTurn",
+      "source_ref": "events.jsonl:line-2",
+      "label": "e00004 model_turn",
+      "order": 4
+    },
+    {
+      "node": "e00005",
+      "node_type": "ToolCall",
+      "source_ref": "events.jsonl:line-2",
+      "label": "e00005 bash",
+      "order": 5
+    },
+    {
+      "node": "e00006",
+      "node_type": "ToolResult",
+      "source_ref": "events.jsonl:line-2",
+      "label": "e00006 bash",
+      "order": 6
+    },
+    {
+      "node": "e00008",
+      "node_type": "ModelTurn",
+      "source_ref": "events.jsonl:line-4",
+      "label": "e00008 model_turn",
+      "order": 8
+    },
+    {
+      "node": "e00009",
+      "node_type": "ToolCall",
+      "source_ref": "events.jsonl:line-4",
+      "label": "e00009 edit",
+      "order": 9
+    },
+    {
+      "node": "file-observed:e00002",
+      "node_type": "FileVersion",
+      "path": "src/app.py",
+      "label": "src/app.py (read target; hash unknown)",
+      "source_ref": "events.jsonl:line-1"
+    }
+  ],
+  "attribution": "Run-level final changes do not identify the responsible tool. Possible contexts and matching edit attempts are hypotheses.",
+  "candidate_tool_results": 2
+}

@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d10" for="edge" attr.name="source_ref" attr.type="string" />
+  <key id="d9" for="edge" attr.name="evidence_status" attr.type="string" />
+  <key id="d8" for="edge" attr.name="relation" attr.type="string" />
+  <key id="d7" for="node" attr.name="sha256" attr.type="string" />
+  <key id="d6" for="node" attr.name="version" attr.type="string" />
+  <key id="d5" for="node" attr.name="path" attr.type="string" />
+  <key id="d4" for="node" attr.name="order" attr.type="long" />
+  <key id="d3" for="node" attr.name="label" attr.type="string" />
+  <key id="d2" for="node" attr.name="source_ref" attr.type="string" />
+  <key id="d1" for="node" attr.name="node_type" attr.type="string" />
+  <key id="d0" for="graph" attr.name="run_id" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="task">
+      <data key="d1">TrustedTask</data>
+      <data key="d2">prompt.txt</data>
+      <data key="d3">Task policy (prepared; delivery unknown)</data>
+    </node>
+    <node id="e00001">
+      <data key="d1">ModelTurn</data>
+      <data key="d2">events.jsonl:line-1</data>
+      <data key="d3">e00001 model_turn</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="e00002">
+      <data key="d1">ToolCall</data>
+      <data key="d2">events.jsonl:line-1</data>
+      <data key="d3">e00002 read</data>
+      <data key="d4">2</data>
+    </node>
+    <node id="file-observed:e00002">
+      <data key="d1">FileVersion</data>
+      <data key="d5">src/app.py</data>
+      <data key="d3">src/app.py (read target; hash unknown)</data>
+      <data key="d2">events.jsonl:line-1</data>
+    </node>
+    <node id="e00003">
+      <data key="d1">ToolResult</data>
+      <data key="d2">events.jsonl:line-1</data>
+      <data key="d3">e00003 read</data>
+      <data key="d4">3</data>
+    </node>
+    <node id="e00004">
+      <data key="d1">ModelTurn</data>
+      <data key="d2">events.jsonl:line-2</data>
+      <data key="d3">e00004 model_turn</data>
+      <data key="d4">4</data>
+    </node>
+    <node id="e00005">
+      <data key="d1">ToolCall</data>
+      <data key="d2">events.jsonl:line-2</data>
+      <data key="d3">e00005 bash</data>
+      <data key="d4">5</data>
+    </node>
+    <node id="e00006">
+      <data key="d1">ToolResult</data>
+      <data key="d2">events.jsonl:line-2</data>
+      <data key="d3">e00006 bash</data>
+      <data key="d4">6</data>
+    </node>
+    <node id="e00007">
+      <data key="d1">ModelTurn</data>
+      <data key="d2">events.jsonl:line-3</data>
+      <data key="d3">e00007 model_turn</data>
+      <data key="d4">7</data>
+    </node>
+    <node id="e00008">
+      <data key="d1">ToolCall</data>
+      <data key="d2">events.jsonl:line-3</data>
+      <data key="d3">e00008 edit</data>
+      <data key="d4">8</data>
+    </node>
+    <node id="e00009">
+      <data key="d1">ToolResult</data>
+      <data key="d2">events.jsonl:line-3</data>
+      <data key="d3">e00009 edit</data>
+      <data key="d4">9</data>
+    </node>
+    <node id="e00010">
+      <data key="d1">FinalResponse</data>
+      <data key="d2">events.jsonl:line-4</data>
+      <data key="d3">e00010 final_response</data>
+      <data key="d4">10</data>
+    </node>
+    <node id="file:0:before">
+      <data key="d1">FileVersion</data>
+      <data key="d5">src/app.py</data>
+      <data key="d6">before</data>
+      <data key="d7">01d09d19c2139a46aebfb577780d123d7396e97201bc7ead210a2ebff8239dee</data>
+      <data key="d3">src/app.py before</data>
+      <data key="d2">baseline.json</data>
+    </node>
+    <node id="file:0:after">
+      <data key="d1">FileVersion</data>
+      <data key="d5">src/app.py</data>
+      <data key="d6">after</data>
+      <data key="d7">7f8b1dfc466b6249f06cbe55c9174df2578e7754da793fded244ef5cba2a38f1</data>
+      <data key="d3">src/app.py after</data>
+      <data key="d2">workspace snapshot</data>
+    </node>
+    <node id="integrity:0">
+      <data key="d1">IntegrityChange</data>
+      <data key="d3">Run-level integrity change</data>
+      <data key="d2">baseline.json + workspace snapshot</data>
+    </node>
+    <edge source="e00001" target="e00002" id="0">
+      <data key="d8">PRECEDED</data>
+      <data key="d9">chronological</data>
+      <data key="d10">events.jsonl:line-1</data>
+    </edge>
+    <edge source="e00001" target="e00002" id="1">
+      <data key="d8">INVOKED</data>
+      <data key="d9">observed</data>
+      <data key="d10">events.jsonl:line-1</data>
+    </edge>
+    <edge source="e00002" target="e00003" id="0">
+      <data key="d8">PRECEDED</data>
+      <data key="d9">chronological</data>
+      <data key="d10">events.jsonl:line-1</data>
+    </edge>
+    <edge source="e00002" target="e00003" id="1">
+      <data key="d8">RETURNED</data>
+      <data key="d9">observed</data>
+      <data key="d10">events.jsonl:line-1</data>
+    </edge>
+    <edge source="file-observed:e00002" target="e00002" id="0">
+      <data key="d8">READ_FROM</data>
+      <data key="d9">observed</data>
+      <data key="d10">events.jsonl:line-1</data>
+    </edge>
+    <edge source="e00003" target="e00004" id="0">
+      <data key="d8">PRECEDED</data>
+      <data key="d9">chronological</data>
+      <data key="d10">events.jsonl:line-2</data>
+    </edge>
+    <edge source="e00003" target="e00005" id="0">
+      <data key="d8">POSSIBLY_AVAILABLE</data>
+      <data key="d9">uncertain</data>
+      <data key="d10">events.jsonl:line-2</data>
+    </edge>
+    <edge source="e00003" target="e00008" id="0">
+      <data key="d8">POSSIBLY_AVAILABLE</data>
+      <data key="d9">uncertain</data>
+      <data key="d10">events.jsonl:line-3</data>
+    </edge>
+    <edge source="e00004" target="e00005" id="0">
+      <data key="d8">PRECEDED</data>
+      <data key="d9">chronological</data>
+      <data key="d10">events.jsonl:line-2</data>
+    </edge>
+    <edge source="e00004" target="e00005" id="1">
+      <data key="d8">INVOKED</data>
+      <data key="d9">observed</data>
+      <data key="d10">events.jsonl:line-2</data>
+    </edge>
+    <edge source="e00005" target="e00006" id="0">
+      <data key="d8">PRECEDED</data>
+      <data key="d9">chronological</data>
+      <data key="d10">events.jsonl:line-2</data>
+    </edge>
+    <edge source="e00005" target="e00006" id="1">
+      <data key="d8">RETURNED</data>
+      <data key="d9">observed</data>
+      <data key="d10">events.jsonl:line-2</data>
+    </edge>
+    <edge source="e00006" target="e00007" id="0">
+      <data key="d8">PRECEDED</data>
+      <data key="d9">chronological</data>
+      <data key="d10">events.jsonl:line-3</data>
+    </edge>
+    <edge source="e00006" target="e00008" id="0">
+      <data key="d8">POSSIBLY_AVAILABLE</data>
+      <data key="d9">uncertain</data>
+      <data key="d10">events.jsonl:line-3</data>
+    </edge>
+    <edge source="e00007" target="e00008" id="0">
+      <data key="d8">PRECEDED</data>
+      <data key="d9">chronological</data>
+      <data key="d10">events.jsonl:line-3</data>
+    </edge>
+    <edge source="e00007" target="e00008" id="1">
+      <data key="d8">INVOKED</data>
+      <data key="d9">observed</data>
+      <data key="d10">events.jsonl:line-3</data>
+    </edge>
+    <edge source="e00008" target="e00009" id="0">
+      <data key="d8">PRECEDED</data>
+      <data key="d9">chronological</data>
+      <data key="d10">events.jsonl:line-3</data>
+    </edge>
+    <edge source="e00008" target="e00009" id="1">
+      <data key="d8">RETURNED</data>
+      <data key="d9">observed</data>
+      <data key="d10">events.jsonl:line-3</data>
+    </edge>
+    <edge source="e00009" target="e00010" id="0">
+      <data key="d8">PRECEDED</data>
+      <data key="d9">chronological</data>
+      <data key="d10">events.jsonl:line-4</data>
+    </edge>
+    <edge source="file:0:before" target="integrity:0" id="0">
+      <data key="d8">COMPARED_WITH</data>
+      <data key="d9">observed</data>
+      <data key="d10">baseline.json</data>
+    </edge>
+    <edge source="integrity:0" target="file:0:after" id="0">
+      <data key="d8">WROTE_TO</data>
+      <data key="d9">observed_run_level</data>
+      <data key="d10">workspace snapshot</data>
+    </edge>
+    <data key="d0">malformed</data>
+  </graph>
+</graphml>

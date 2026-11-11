@@ -1,0 +1,16 @@
+{
+  "directed": true,
+  "edges": [],
+  "graph": {
+    "run_id": "tool-output-001"
+  },
+  "multigraph": true,
+  "nodes": [
+    {
+      "id": "task",
+      "label": "Task policy (prepared; delivery unknown)",
+      "node_type": "TrustedTask",
+      "source_ref": "prompt.txt"
+    }
+  ]
+}

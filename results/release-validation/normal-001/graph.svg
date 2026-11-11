@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="350" role="img" aria-labelledby="title desc">
+<title id="title">Agent evidence provenance graph</title>
+<desc id="desc">Nodes follow export order. Solid edges are observed evidence, dashed orange edges are uncertain hypotheses, dotted gray edges mean chronology only. No edge proves cognitive influence.</desc>
+<rect width="100%" height="100%" fill="white"/>
+<text x="20" y="25" font-size="18">Evidence DAG: observed (solid), possible (orange dashed), time only (gray dotted)</text>
+<text x="20" y="50" font-size="12">Types: task · model · tool call/result · file version · integrity change · policy finding. Labels include type and evidence ID.</text>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L7,3 z" fill="#555"/></marker></defs>
+<rect x="20" y="80" width="570" height="44" rx="5" fill="#fff4bd" stroke="#777"/>
+<text x="30" y="98" font-size="11">task [TrustedTask] Task policy (prepared; delivery unknown)<title>task [TrustedTask] Task policy (prepared; delivery unknown)</title></text>
+<text x="30" y="114" font-size="10">prompt.txt</text>
+</svg>
